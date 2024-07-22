@@ -790,11 +790,11 @@ Exporting a `MultiAssayExperiment` data container can also be done using *feathe
 # Convert into a data.frame
 molten_mae <- longFormat(mae)
 molten_mae <- data.frame(molten_mae)
-path <- "path/to/mae.feather"
+path <- "path/to/mae.feather" 
 write_feather(molten_mae,path)
 ```
 
-And as a CSV file.
+And as a CSV file :
 
 ```{r, eval=FALSE}
 write.csv(molten_mae, "path/to/mae.csv", row.names=FALSE)
